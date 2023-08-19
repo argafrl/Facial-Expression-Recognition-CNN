@@ -1,2 +1,4 @@
 .ipynb_checkpoints
 human-emotion-detection.ipynb
+deploy/shape_predictor_68_face_landmarks.dat
+deploy/weights.h5
