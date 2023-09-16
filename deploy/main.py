@@ -71,7 +71,7 @@ while cap.isOpened():
 
     if cv2.waitKey(1) == 27:
         break
-    cv2.imshow("Facial Emotion Recognition (FER)", fr)
+    cv2.imshow("Facial Emotion Recognition: ", fr)
 
 cap.release()
 cv2.destroyAllWindows()
