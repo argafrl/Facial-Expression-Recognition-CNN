@@ -61,8 +61,8 @@ while cap.isOpened():
         roi = cv2.resize(fc, (48, 48))
         pred = model.predict_emotion(roi[np.newaxis, :, :, np.newaxis])
 
-        cv2.putText(fr, pred, (x, y), font, 1, (255, 255, 0), 1)
-        cv2.rectangle(fr, (x, y), (x + w, y + h), (255, 0, 0), 1)
+        cv2.putText(fr, pred, (x, y), font, 1, (255, 255, 255), 1)
+        cv2.rectangle(fr, (x, y), (x + w, y + h), (255, 255, 255), 1)
 
         shape = predictor(gray, dlib.rectangle(x, y, x + w, y + h))
         shape = face_utils.shape_to_np(shape)
